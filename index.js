@@ -1,7 +1,7 @@
 /*
 
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-                                                 
+                                                  
   _________ ___ ___ ._______   _________    
  /   _____//   |   \|   \   \ /   /  _  \   
  \_____  \/    ~    \   |\   Y   /  /_\  \  
@@ -11,9 +11,8 @@
                     
 DISCORD :  https://discord.com/invite/xQF9f9yUEM                   
 YouTube : https://www.youtube.com/@GlaceYT                         
-                                                                       
-☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
 
+☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
 
 */
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
@@ -45,7 +44,7 @@ bot.once('ready', () => {
     bot.user.setPresence({
         status: 'dnd',  // Define o status como "Não Perturbe" (bolinha vermelha)
         activities: [{
-            name: 'Itália Roleplay',  // Nome "Itália Roleplay" como balão
+            name: 'Jogando Itália Roleplay',  // Alterado para "Jogando Itália Roleplay"
             type: 'PLAYING',
         }],
     });
@@ -90,11 +89,10 @@ client.once('ready', () => {
 
 login();
 
-  
 /*
 
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-                                                 
+                                                  
   _________ ___ ___ ._______   _________    
  /   _____//   |   \|   \   \ /   /  _  \   
  \_____  \/    ~    \   |\   Y   /  /_\  \  
@@ -104,8 +102,7 @@ login();
                     
 DISCORD :  https://discord.com/invite/xQF9f9yUEM                   
 YouTube : https://www.youtube.com/@GlaceYT                         
-                                                                       
-☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
 
+☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
 
 */
