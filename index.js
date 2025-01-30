@@ -38,7 +38,7 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["Itália Roleplay"];
-const statusTypes = [ 'dnd', 'idle'];
+const statusTypes = ['playing'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
 
