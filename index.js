@@ -37,10 +37,19 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["Itália Roleplay"];
-const statusTypes = ['playing'];
-let currentStatusIndex = 0;
-let currentTypeIndex = 0;
+const { Client, Intents } = require('discord.js');
+const bot = new Client({ intents: [Intents.FLAGS.GUILDS] });
+
+bot.once('ready', () => {
+    // Define o status do bot para Não Perturbe e a mensagem de atividade
+    bot.user.setPresence({
+        status: 'dnd',  // Define o status como "Não Perturbe" (bolinha vermelha)
+        activities: [{
+            name: 'Itália Roleplay',  // Nome "Itália Roleplay" como balão
+            type: 'PLAYING',
+        }],
+    });
+});
 
 async function login() {
   try {
