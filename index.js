@@ -1,7 +1,7 @@
 /*
 
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-                                                  
+                                                 
   _________ ___ ___ ._______   _________    
  /   _____//   |   \|   \   \ /   /  _  \   
  \_____  \/    ~    \   |\   Y   /  /_\  \  
@@ -11,8 +11,9 @@
                     
 DISCORD :  https://discord.com/invite/xQF9f9yUEM                   
 YouTube : https://www.youtube.com/@GlaceYT                         
-
+                                                                       
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
+
 
 */
 const { Client, GatewayIntentBits, ActivityType } = require('discord.js');
@@ -36,19 +37,10 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const { Client, Intents } = require('discord.js');
-const bot = new Client({ intents: [Intents.FLAGS.GUILDS] });
-
-bot.once('ready', () => {
-    // Define o status do bot para Não Perturbe e a mensagem de atividade
-    bot.user.setPresence({
-        status: 'dnd',  // Define o status como "Não Perturbe" (bolinha vermelha)
-        activities: [{
-            name: 'Jogando Itália Roleplay',  // Alterado para "Jogando Itália Roleplay"
-            type: 'PLAYING',
-        }],
-    });
-});
+const statusMessages = ["🎧 Ouvindo Itália Roleplay", "🎮 Jogando Itália Roleplay"];
+const statusTypes = [ 'dnd', 'idle'];
+let currentStatusIndex = 0;
+let currentTypeIndex = 0;
 
 async function login() {
   try {
@@ -89,10 +81,11 @@ client.once('ready', () => {
 
 login();
 
+  
 /*
 
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
-                                                  
+                                                 
   _________ ___ ___ ._______   _________    
  /   _____//   |   \|   \   \ /   /  _  \   
  \_____  \/    ~    \   |\   Y   /  /_\  \  
@@ -102,7 +95,8 @@ login();
                     
 DISCORD :  https://discord.com/invite/xQF9f9yUEM                   
 YouTube : https://www.youtube.com/@GlaceYT                         
-
+                                                                       
 ☆.。.:*・°☆.。.:*・°☆.。.:*・°☆.。.:*・°☆
+
 
 */
